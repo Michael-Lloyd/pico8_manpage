@@ -1,17 +1,16 @@
-### Disclaimer: 
+**Disclaimer**: 
 
-Pico-8 is not my own software or trademark, and is under copyright by Lexaloffle Games LLP. 
-This repository is a creative transformation of content and serves no commercial purpose. 
-
+*Pico-8 is not my own software or trademark, and is under copyright by Lexaloffle Games LLP. 
+This repository is a creative transformation of content and serves no commercial purpose.*
 
 # Man-Pages for the Pico8 Fantasy Console 
 
-### TL;DR? 
+#### TL;DR? 
 
-Pre-formatted manpages, some installation scripts for said manpages, and a collection of
+* Pre-formatted manpages, some installation scripts for said manpages, and a collection of
 helper scripts for pulling up reference information about the Pico-8 Fantasy Console. 
 
-Repository TODO's can be found in `BUCKETLIST.md`. 
+* Repository TODO's can be found in `BUCKETLIST.md`. 
 
 ## What is Pico8? 
 
