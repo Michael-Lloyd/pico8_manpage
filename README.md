@@ -15,8 +15,8 @@ helper scripts for pulling up reference information about the Pico-8 Fantasy Con
 ## What is Pico8? 
 
 The Pico-8 (P8) Fantasy Console is a virutal machine and console emulator for hardware
-that never existed, created by Joeseph White (zep [FIXME]) in 2014. It comes with a unique colour 
-palette and game engine running a Lua DSL (FIXME) familiar to programming on classic 8-bit 
+that never existed, created by Joeseph White ([zep](https://twitter.com/lexaloffle)) in 2014. It comes with a unique colour 
+palette and game engine running a Lua DSL familiar to programming on classic 8-bit 
 computers and gaming consoles from the late 1970's. 
 
 The fantasy game console has gained popularity after a number of free and open game
@@ -28,10 +28,10 @@ Following convention for many long time Unix/Linux users, programming is often n
 when the documentation is readily accessible. Common convention for *nix available 
 binaries is well-formatted manual documents, or Manpages. 
 
-Pico-8 already has documentation in a similar style, accessible here (FIXME)[], 
+Pico-8 already has documentation in a similar style, accessible [here](https://www.lexaloffle.com/pico-8.php?page=manual), 
 however -- this isn't accessible as a manual standard most of us prefer, and there
 are many aspects of the P8 API that are not concisely documented officially, but
-have been elsewhere (see: Pico-8 API reference [FIXME]). 
+have been elsewhere (see: [Pico-8 API reference](https://iiviigames.github.io/pico8-api/). 
 
 # Contents 
 
@@ -42,24 +42,52 @@ formatted for compatibility on most *nix systems, along with installation script
 `/p8_std/install.sh`, which, disclaimer, requires you have access to a compatible shell. 
 
 The standard package only contains information found in the classic Pico-8 refernece 
-manual (above [FIXME]). It does not contain any helper scripts, and is a simple port. 
+manual ([above](https://www.lexaloffle.com/pico-8.php?page=manual)). It does not contain any helper scripts, and is a simple port.
+
+To recompile the manpages from their source, check you have the required crate dependencies
+in "Technical Notes", and call `build.sh`. 
 
 #### Files: 
 
 ```
+/p8_std
+├─/src
+│ └╴TBA
+├─/pages
+│ └╴TBA
+├─/html
+│ └╴TBA
+├╴build.sh 
+└╴install.sh 
+```
 
+## Extended Documents 
+
+TBA 
+
+```
+Altruistic pico8 encyclopedia: 
+https://www.pico-ate.com/
+
+Fan-driven wiki: 
+https://pico-8.fandom.com/wiki/Pico-8_Wikia
+ 
+Game Development with PICO-8
+by Dylan Bennet
+https://mboffin.itch.io/gamedev-with-pico-8-issue1
 ```
 
 # Technical Notes 
 
 ## Formats 
 
-All of the manpages are written in FIXME format, then compiled to standard manpage 
-files with FIXME. Information about using this standard (if you want to contribute, 
-or just interested) can be found at: 
+All of the manpages provided are written with `rust-cli/man`, a wrapper over the `roff-rs`
+package, used for generating structured documentation in the rust programming language. 
 
-* Doc format [FIXME] 
-* Processor [FIXME] 
+The git repository for the wrapper can be found [here](https://github.com/rust-cli/man), and the docs can be found [here](https://docs.rs/man/0.3.0/man/). 
+
+Documentation for `roff-rs` can be found via the [git repository](https://github.com/rust-cli/roff-rs). 
+
 
 ## Installation Scripts 
 
